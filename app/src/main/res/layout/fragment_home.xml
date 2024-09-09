@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Shahriar!"
+        android:textColor="#2F2F2F"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        />
+
+    <TextView
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:text="Explore the world"
+        android:textColor="#888888"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImage"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="310dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:src="@drawable/ic_profile"
+        />
+    
+    <EditText
+        android:id="@+id/ed_text"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="122dp"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Search places"
+        />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Popular places"
+        android:textColor="#2F2F2F"
+        />
+
+    <TextView
+        android:id="@+id/view_all"
+        android:layout_width="56dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginLeft="310dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="View all"
+        android:textColor="#888888"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <Button
+        android:id="@+id/mostView"
+        android:layout_width="110dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="242dp"
+        android:text="Most Viewed"
+        android:textSize="10sp"
+        android:textColor="@color/defaultBtnText"
+        android:backgroundTint="@color/defaultBtn"/>
+
+    <Button
+        android:id="@+id/nearby"
+        android:layout_width="110dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="242dp"
+        android:text="Nearby"
+        android:textSize="10sp"
+        android:textColor="@color/defaultBtnText"
+        android:backgroundTint="@color/defaultBtn"/>
+
+    <Button
+        android:id="@+id/latest"
+        android:layout_width="110dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="242dp"
+        android:text="Latest"
+        android:textSize="10sp"
+        android:textColor="@color/defaultBtnText"
+        android:backgroundTint="@color/defaultBtn"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="320dp"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        />
+
+</RelativeLayout>
